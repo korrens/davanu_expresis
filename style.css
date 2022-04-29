@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background: #8596a0;
+    background: #606467;
     color: #ffffff;
     min-height: 70px;
     border-bottom: #b70001 solid 4px;
@@ -49,7 +49,7 @@ header a:hover {
     color: #b70001;
 }
 
-header #branding {
+header#branding {
     float: left;
     margin: 0;
 }
@@ -58,11 +58,112 @@ header nav {
     float: right;
 }
 
-header .highlight a {
-    color: #b70001;
-    font-weight: bolder;
+#cta {
+    min-height: 400px;
+    background: url('./img/cta.jpeg') no-repeat;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: #b70001 solid 2px;
 }
 
-header .highlight a:hover {
+#cta h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#cta p {
+    font-size: 20px;
+}
+
+#nosirds {
+    padding: 15px;
     color: #ffffff;
+    background-color: #606467;
+    text-align: center;
+    border-bottom: #b70001 solid 2px;
+}
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 150px;
+}
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+.dark {
+    padding: 15px;
+    background-color: #606467;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #b70001;
+    text-align: center;
+}
+
+.button-1 {
+    height: 38px;
+    background-color: #b70001;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.button-1:hover {
+    background-color: red;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+}
+
+@media(max-width: 768px) {
+
+    header #branding,
+    header nav,
+    header nav li,
+    #cta,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar,
+    header .container {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #cta h1 {
+        margin-top: 40px;
+    }
 }
